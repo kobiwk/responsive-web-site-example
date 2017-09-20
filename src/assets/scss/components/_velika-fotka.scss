@@ -1,0 +1,113 @@
+.velika-fotka {
+
+	@include breakpoint(small) {
+		background-image: url(../img/velika-fotka-small.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 510px;
+	}
+
+	@include breakpoint(medium) {
+		height: 474px;
+		background-image: url(../img/velika-fotka-medium.png);
+	}
+
+	@include breakpoint(large) {
+		height: 645px;
+		background-image: url(../img/velika-fotka.jpg);
+		background-size: 100% 100%;
+	}
+
+	.velika-fotka-omotac {
+		left: 0;
+	  	right: 0;
+	}
+
+	.kutija {
+		margin-left: auto;
+	  	margin-right: auto;
+		
+		@include breakpoint(small) {
+		    background-color: $bela;
+		    width: 20.625rem;
+		    padding: 3rem 1.5625rem 1.5625rem 1.5625rem;
+		}
+
+		@include breakpoint(medium){
+			width: 374px;
+		}
+
+		@include breakpoint(large){
+			width: 460px;
+			height: 475px;
+		}
+	}
+
+	.kutija h2 {
+	  font-weight: 800;
+	  font-size: 1.875rem;
+	  padding-bottom: 1.25rem;
+	  width: 100%;
+	  padding-left: 0;
+	  padding-right: 0;
+
+	  @include breakpoint(large) {
+	  		font-size: 36px;
+	  		width: 200px;
+	  		margin: 0 auto;
+	  		line-height: 36px;
+	  		padding-bottom: 30px;
+	  }
+	}
+
+	.prvi-pasus {
+	  padding-bottom: 1.5625rem;
+	  font-size: 1rem;
+	  @include breakpoint(large) {
+		  width: 340px;
+		  margin: 0 auto;
+		  padding-bottom: 20px;
+		  font-size: 18px;
+		}
+	}
+
+	.drugi-pasus {
+	  font-size: 1rem;
+	  padding-bottom: 1.25rem;
+	  
+	  @include breakpoint(large) {
+		  width: 340px;
+		  margin: 0 auto;
+		  padding-bottom: 40px;
+		  font-size: 18px;
+		}	  
+	}
+
+	.dugme-za-pretragu {
+		 height: 3rem;
+	}
+
+	.dugme-za-pretragu .button {
+
+	    background-color: $crvena;
+	    width: 100%;
+	    padding: 0;
+	    line-height: 3rem;
+	    color: $bela;
+	    font-weight: 600;
+	    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+        -webkit-border-radius: 2px; 
+        /* Firefox 1-3.6 */
+        -moz-border-radius: 2px; 
+        /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+        border-radius: 2px;
+
+	    @include breakpoint(medium) {
+	  	    width: 80%;
+	    }
+
+	    @include breakpoint(large) {
+	  	    width: 340px;
+	    }
+	 }
+}

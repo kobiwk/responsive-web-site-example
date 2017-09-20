@@ -1,0 +1,381 @@
+.large-screen-view {
+	@include breakpoint(large) {
+		height: 100vh;
+
+		header {
+			border-bottom: 1px solid $siva;
+		}
+
+		.heder-mein {
+			margin-bottom: 31px;
+			margin-top: 10.5rem;
+		}
+
+		.glavni-logo {
+			width: 263px;
+			margin: 0 auto;
+			padding-bottom: 30px;
+		}
+
+		.naslov {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+		.nekretnine {
+			margin-top: 10px;
+		}
+
+		.naslov-nekretnine{
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+
+		.strelica {
+			width: 50px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.view-screen {
+	@include breakpoint(medium down) 
+	{
+		background-color: $siva;
+		height: 100vh;
+	}
+
+
+	//LOGO
+
+	.heder-mein {
+		height: 32.036%;
+	}
+
+	.omotac {
+		left: 0;
+		right:0;
+		margin: 0 auto;
+	}
+	.glavni-logo {
+		display: block;
+		clear: both;
+		
+		//small 
+		@include breakpoint(medium down) {
+			width: 180px;
+			height: 36.036%;
+			margin: $horizontalisanje;
+
+		}
+
+		// large
+		@include breakpoint(large)
+		{
+			width: 257px;
+			margin: $horizontalisanje;
+			padding-bottom: 20px;
+		}
+	}
+
+	.naslov {
+		@include breakpoint(small) {
+			font-size: 18px;
+			font-weight: 300;
+			width: 260px;
+			margin:0 auto;
+			text-align: center;
+		}
+		@include breakpoint(medium)
+		{
+			width: 378px;
+		}
+		@include breakpoint(large){
+			font-size: 21px;
+			width: 420px;
+
+		}
+	}
+
+	//PRETRAGA
+	.search {
+
+		position: relative;
+
+		@include breakpoint(small) {
+			margin: 0 1.25rem;
+			height: 46px;
+
+		}
+
+		@include breakpoint(medium){
+			background-color: $bela;
+			width: 378px;
+			margin: 0 auto;
+		}
+		@include breakpoint(large) {
+			width: 58.75rem;
+			height: 46px;
+			border: 2px solid $crvena;
+			/* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    		-webkit-border-radius: 2px; 
+    		/* Firefox 1-3.6 */
+    		-moz-border-radius: 2px; 
+    		/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    		border-radius: 2px;
+			position: relative;
+			margin:0 auto;
+		}
+		
+		select{
+			height: 46px;
+			-webkit-appearance:none;
+		    -moz-appearance:none;
+		    appearance:none;
+		    cursor:pointer;
+		    background: none;
+		    border: none;
+		    font-size: 16px;
+		    letter-spacing: 0.75px;
+		    width:100%;
+
+		    @include breakpoint(large) {
+		    	height: 42px;
+		    }
+		}
+
+    	.prodaja {
+    		position: relative;
+
+    		@include breakpoint(large) {
+    			width: 7.938rem;
+				float: left;
+				height: 100%;
+    		}
+    	}
+
+    	.prodaja::after{
+    		@include breakpoint(medium down)
+    		{
+				position: absolute;
+				content: url("../img/meni-strelica-crna.png");
+				right: 15px;
+				top: 13px;
+			}
+
+			@include breakpoint(large)
+    		{
+				position: absolute;
+				content: url("../img/meni-strelica.png");
+				right: 15px;
+				top: 13px;
+			}
+		}
+
+		.prodaja select{
+
+			@include breakpoint(medium down) {
+				width: 100%;
+				margin: 0;
+				border: $border;
+				background-color: $bela;
+			}
+			
+		}
+
+		.gradovi {
+    		position: relative;
+
+    		@include breakpoint(large) {
+				width: 19.38rem;
+				overflow: hidden;
+				float: left;
+			}
+    	}
+    	.gradovi::after{
+    		@include breakpoint(medium down)
+    		{
+				position: absolute;
+				content: url("../img/meni-strelica-crna.png");
+				right: 15px;
+				top: 23px;
+			}
+
+			@include breakpoint(large)
+    		{
+				position: absolute;
+				content: url("../img/meni-strelica.png");
+				right: 15px;
+				top: 13px;
+			}
+		}
+		
+		.gradovi select{
+
+			@include breakpoint(medium down) {
+				border: $border;
+				background-color: $bela;
+				margin-top: 0.625rem;
+				margin-bottom: 0;			
+			    }
+
+			//large
+			
+		}
+
+		.stanovi {
+    		position: relative;
+
+    		@include breakpoint(large) {
+				//border: $border;
+				width: 7.5rem;
+				overflow: hidden;
+				float: left;
+			}
+
+    	}
+    	.stanovi::after{
+	    	@include breakpoint(medium down) {
+				position: absolute;
+				content: url("../img/meni-strelica-crna.png");
+				right: 15px;
+				top: 23px;
+			}
+
+			@include breakpoint(large) {
+				position: absolute;
+				content: url("../img/meni-strelica.png");
+				right: 15px;
+				top: 13px;
+			}
+		}
+
+		.stanovi select{
+
+			@include breakpoint(medium down) {
+				border: $border;
+				background-color: $bela;
+				margin-bottom: 0;
+				margin-top: 0.625rem;
+			}
+		}
+
+		input{
+		    border: none;
+		    -webkit-appearance:none;
+		    -moz-appearance:none;
+		    appearance:none;
+		    color: #d9d1d1;
+		    font-weight: 400;
+		    font-size: 16px;
+		    width: 2.188rem;
+		    height: 44px;
+		    margin:0;
+		    padding: 0;
+		    box-shadow: none;
+
+		    @include breakpoint(large){
+		    	height: 41px;
+		    }
+		}
+
+		.pretraga input{
+			@include breakpoint(medium down) {
+				width: 100%;
+				background-color: $crvena;
+				color: $bela;
+				height: 2.938rem;
+				margin-top: 0.625rem;
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+		}
+
+		.input-okvir {
+			@include breakpoint(medium down) {
+				height: 46px;
+				background-color: $bela;
+				border: $border;
+				margin-top: 0.625rem;
+				position: relative;
+			}
+
+			@include breakpoint(large){
+				line-height: 41px;
+				float: left;
+			}
+		}
+
+		.input-okvir::after{
+			@include breakpoint(medium down) {
+			    position:absolute;
+			    content: url("../img/mala-strelica-crvena.png");
+			    left: 80px;
+			    top: 14px;
+			}
+
+			@include breakpoint(large) {
+			    position:absolute;
+			    content: url("../img/mala-strelica-crvena.png");
+			    left: 622px;
+			    top: 6px;
+			}
+
+
+		}
+
+		.input-okvir input:last-child {
+			margin-left: 5px;
+		}
+
+		.input-okvir-drugi::after {
+			@include breakpoint(large) {
+			    position:absolute;
+			    content: url("../img/mala-strelica-crvena.png");
+			    left: 742px;
+			    top: 6px;
+			}
+		}
+
+
+
+		.input-okvir span {
+			@include breakpoint(medium down) {
+				line-height: 46px;
+				width: 45px;
+				border-right: $border;
+				color: $crvena;
+				font-weight: 700;
+			}
+
+			@include breakpoint(large){
+				line-height: 44px;
+				width: 45px;
+			}
+		}
+
+		.pretraga .button {
+			@include breakpoint(large){
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background-color: $crvena;
+			color: $bela;
+			width: 125px;
+			height: 100%;
+		  }
+		}
+
+		.input-okvir input {
+			float: left;
+			@include breakpoint(medium down) {
+				color: $crna;
+				padding-left: 15px;
+			}
+		}
+	}
+
+}
+

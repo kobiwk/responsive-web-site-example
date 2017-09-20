@@ -1,0 +1,224 @@
+.srednji-deo {
+	display: block;
+	background-color: $bela;
+	margin: 0 auto;
+	margin-bottom: 20px;
+
+	@include breakpoint(medium) {
+	   width: 640px;
+	}
+
+	@include breakpoint(large) {
+	  	background-color: $siva;
+	  	width: 100%;
+	  	height: 414px;
+	  	position: relative;
+	  	margin-bottom: 0;
+	  }
+
+	  .celina-omotac {
+	  	@include breakpoint(large) {
+	  		width: 955px;
+	  		background-color: $crvena;
+	  	}
+	  }
+
+		.celina-1{
+		    display:block;
+		    margin: 0;
+
+		   @include breakpoint(large) {
+		   	   position: absolute;
+		   	   top: 50%;
+		   	   margin-top: -181px;
+		   }
+		}
+
+		.celina-1 .slika img {
+		  width: 100%;
+		  height: 100%;
+
+		  @include breakpoint(medium) {
+		  	  width: 140px;
+		  	  height: 235px;
+		  	  margin-right: 12px;
+		  	  float: left;
+		  }
+
+		  @include breakpoint(large) {
+		  	 width: 220px;
+		  	 height: 362px;
+		  	 margin-right: 0;
+		  }
+		}
+
+
+		.celina-1 .tekst-1{
+			display: block;
+		  	margin-top: 1.40rem;
+		  	margin-left:0px;
+		  	padding: 0;
+
+		  	@include breakpoint(large) {
+		  		width: 240px;
+		  	 	height: 362px;
+		  		float: left;
+		  		background-color: $bela;
+		  		margin-top: 0;
+		  		padding-top: 40px;
+		  		padding-left: 20px;
+		  	}
+		}
+
+		.tekst-1 .prvi-naslov{
+		    font-size: 1.5rem;
+		    font-weight: 400;
+		    font-style: italic;
+		    text-transform: italic;
+		    margin-top: -5px;
+		    padding-bottom: 3px;
+		    
+		    @include breakpoint(medium){
+				font-size: 18px;		
+			}
+
+			@include breakpoint(large){
+				font-size: 24px;
+				padding-bottom: 30px;
+			}
+		}
+
+		.tekst-1 p{
+
+			line-height: 30px;
+		    padding-bottom: -10px;
+		    font-weight: 300;
+		    font-size: 1rem;
+
+			@include breakpoint(medium)
+			{
+				font-size: 14px;		
+				line-height: 1.15rem;
+			}
+		    
+		    @include breakpoint(large) {
+		    	font-size: 16px;
+		    	font-weight: 300;
+		    	line-height: 24px;
+		    }
+		}
+
+		.tekst-1 .linkovi{
+		  color: #de5d55;
+		  text-transform: uppercase;
+		  font-weight: 600;
+		  text-decoration: none;
+		}
+
+		.tekst-1 .linkovi-omotac {
+			@include breakpoint(medium)
+			{
+				font-size: 14px;		
+			}
+			margin-bottom: 4.375rem;
+		}
+
+		.celina-2 {
+		    display:block;
+		    margin: 0;
+
+		    @include breakpoint(medium down) {
+		  	    padding-bottom: -25px;
+		    }
+
+		   @include breakpoint(large) {
+		   	   position: absolute;
+		   	   top: 50%;
+		   	   right: 0%;
+		   	   margin-top: -181px;
+		   }
+		}
+
+		.celina-2 .slika img {
+		    width: 100%;
+			@include breakpoint(medium) {
+		  	    width: 140px;
+		  	    height: 235px;
+		  	    margin-right: 12px;
+		  	    float: left;
+		    }
+
+		    @include breakpoint(large) {
+		  	   width: 220px;
+		  	   height: 362px;
+		  	   margin-right: 0;
+		    }
+		}
+
+		.celina-2 .tekst-2{
+		    display: block;
+		  	margin-top: 1.40rem;
+		  	margin-left:0px;
+		  	padding: 0;
+
+		  	@include breakpoint(large) {
+		  		width: 240px;
+		  	 	height: 362px;
+		  		float: left;
+		  		background-color: $bela;
+		  		margin-top: 0;
+		  		padding-top: 40px;
+		  		padding-left: 20px;
+		  	}
+		}
+
+		.tekst-2 .drugi-naslov{
+		 @include breakpoint(medium)
+			{
+				font-size: 18px;		
+			}
+		    font-size: 1.5rem;
+		    font-weight: 400;
+		    font-style: italic;
+		    text-transform: italic;
+		    margin-top: -5px;
+		    padding-bottom: 3px;
+
+		    @include breakpoint(large){
+				font-size: 24px;
+				padding-bottom: 30px;
+			}
+		}
+
+		.tekst-2 p{
+		  @include breakpoint(medium)
+			{
+				font-size: 14px;		
+			}
+		    line-height: 1.15rem;
+		    padding-bottom: -10px;
+		    font-weight: 300;
+		    font-size: 1rem;
+
+		    @include breakpoint(large) {
+		    	font-size: 16px;
+		    	font-weight: 300;
+		    	line-height: 24px;
+		    }
+		}
+
+		.tekst-2 .linkovi{
+		    color: $crvena;
+		    text-transform: uppercase;
+		    font-weight: 600;
+		    text-decoration: none;
+		}
+
+		.tekst-2 .linkovi-omotac {
+			@include breakpoint(medium)
+			{
+				font-size: 14px;		
+			}
+			margin-bottom: 4.375rem;
+		}
+	}

@@ -1,0 +1,46 @@
+.omotac-oko-srednjeg-teksta {
+	background-color: $siva;
+	width: 100%;
+
+	@include breakpoint(large){
+		background-color: $bela;
+	}
+}
+
+.srednji-tekst {
+
+	@include breakpoint(small) {
+	    height: 21.44rem;
+	    width: 74.67%;
+	    margin:0 auto;
+	}
+
+	.vertikalno-podesavanje {
+		display: block;		
+	}
+
+	.treci-naslov {
+		@include breakpoint(small) {
+		    font-size: 30px;
+		    font-weight: 800;
+		    padding-bottom: 1.875rem;
+		}
+
+		@include breakpoint(large) {
+		  	font-size: 48px;
+		  	font-weight: 800;
+		  }
+		}
+
+	.treci-tekst {
+		@include breakpoint(small) {
+		    font-size: 1rem;
+		}
+
+	    @include breakpoint(large){
+		    background-color: $bela;
+		    width: 940px;
+		    font-size: 21px;
+	}
+  }
+}
